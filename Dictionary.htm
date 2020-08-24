@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>Words to learn</title>
+<meta name="viewport" content="width=device-width">
+<style>
+body {
+    background-color:black;
+    color:green;
+}
+h1 {
+    font-size:300%;
+    font-weight:bold;
+}
+dt {
+    font-size:300%;
+    font-weight:bold;
+}
+dd {
+    font-size:200%;
+}
+</style>
+</head>
+
+
+<body>
+	<h1 style="text-align:center;">Words for the speaking club</h1>
+ 
+<dl>    
+    <dt>frustration</dt>
+    <dd>the feeling of being annoyed because things are not happening in the way that you want, or in the way that they should</dd>
+    <dd>разочарование, расстройство</dd>
+    <hr>
+
+    <dt>exhausted (adj.)</dt>
+    <dd>very tired</dd>
+    <dd>сильно уставший, выдохшийся</dd>
+    <hr>
+
+    <dt>add your term...</dt>
+    <dd>add your definifion...</dd>
+    <hr>
+
+</dl>
+
+<script>
+    var gama = ["red", "yellow", "pink", "purple", "#993300", "#ff3399"];
+    let terms = document.getElementsByTagName('dt');
+
+    var j = 0;
+    for (var i = 0; i < terms.length; ++i) {
+        terms[i].style.color = gama[j];
+        ++j;
+        if (j >= gama.length) {
+            j = 0;
+        }
+    }
+</script>
+
+</body>
+
+</html>
